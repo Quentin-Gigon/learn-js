@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="myH1">My Website</h1>
+    <p id="myP">Welcome</p>
+
+    <label>username</label>
+    <input id="myText"><br><br>
+    <button id="mySubmit1">submit</button><br><br>
+
+    <!--counter program-->
+    <label id="countLabel">0</label><br>
+    <div id="btnContainer">
+        <button id="decrButton" class="counterButtons">decrease</button>
+        <button id="incrButton" class="counterButtons">increase</button>
+        <button id="resetButton" class="counterButtons">reset</button>
+    </div><br><br>
+
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">subscribe</label><br><br>
+
+    <!--use the name attribute to group radio buttons
+    s.t. only one can be selected at a time-->
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label><br>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">Mastercard</label><br>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
+    <div id="myEventButton">
+        Button for event 😃
+    </div>
+
+    <div id="floatingEmoji">
+        🎉
+    </div>
+
+    <input type="text" id="pokemonName" placeholder="Enter pokemon name">
+    <button onclick="fetchData()">Fetch pokemon</button><br>
+
+    <img src="" id="pokemonSprite" alt="pokemon image">
+
+    <!--keep script at bottom for debugging purposes-->
+    <script src="index.js"></script>
+</body>
+
+</html>
